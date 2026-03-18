@@ -39,4 +39,12 @@ public class Celular {
 
         System.out.printf("\nA resolução da foto tirada no %s %s foi de: %.1f MP", fabricante, modelo, resolucao);
     }
+    
+    //CRIAR UM METÓDO COM PARAMETRO FLOAT - REPRESENTANDO A CARGA APLICADA NA BATERIA - VAI MOSTRAR O QUE TINHA ANTES E O QUE TEVE DEPOIS DO MÉTODO
+
+    public void carga(float carregado){
+
+        System.out.printf("\nSeu celular estava %.0f%% é agora está com a carga de: %.0f%%", bateria, carregado);
+    }
 }
+

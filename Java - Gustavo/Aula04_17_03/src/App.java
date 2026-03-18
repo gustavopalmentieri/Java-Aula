@@ -14,6 +14,7 @@ public class App {
         celular1.ligacao("Gustavo");
         celular1.mensagem("Claudio", "Parabéns você ganhou 5 Milhões de Doláres");
         celular1.foto(15.5f);
+        celular1.carga(100f);
 }
 
 
