@@ -37,7 +37,7 @@ public class ContaBancaria {
         if(transferido <= saldo){
 
             saldo -= transferido;
-            System.out.printf("\nPix realizado com sucesso!! \nAgência: %s \nConta: %s \nValor transferido: %.2f \nSaldo Atual: %.2f",agencia_dest, conta_dest,transferido, saldo);
+            System.out.printf("\nPix realizado com sucesso!! \nAgência: %s \nConta: %s \nValor transferido: %.2f Reais \nSaldo Atual: %.2f Reais\n",agencia_dest, conta_dest,transferido, saldo);
         }
 
         else{
@@ -46,5 +46,22 @@ public class ContaBancaria {
 
         }
     }
+
+    //METÓDO SACAR
+
+    public void sacar(float saque){
+
+        if (saque <= saldo){
+
+            saldo -= saldo;
+            System.out.printf("\nSaque Realizado com Sucesso!! Valor sacado: %.2f Reais - Saldo atual: %.2f Reais", saque, saldo);
+        }
+
+        else{
+
+            System.out.printf("\nSaque não realizado!! - Saldo Insuficiente - Saldo atual: %.2f ", saldo);
+        }
+    }
+
 
 }

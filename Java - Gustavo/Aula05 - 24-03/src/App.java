@@ -14,6 +14,8 @@ public class App {
         conta1.exibir();
         conta1.depositar(150f);
 
+        
+
         //TRANSFERÊNCIA VIA SCANNER:
 
         System.out.printf("\nDigite o valor - agência - conta de destino: ");
@@ -22,6 +24,14 @@ public class App {
         String conta_dest = sc.next();
 
         conta1.pix(transferido, agencia_dest, conta_dest);
+
+        //SAQUE VIA SCANNER
+
+        System.out.printf("\nRealize seu saque!!");
+        System.out.printf("\nDigite o valor que deseja sacar: ");
+        float saque = sc.nextFloat();
+
+        conta1.sacar(saque);
       
     }
 }
