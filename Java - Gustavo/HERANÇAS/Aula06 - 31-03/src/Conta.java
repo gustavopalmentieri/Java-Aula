@@ -27,10 +27,22 @@ public class Conta { //CLASSE MÃE
 
         //METÓDO RENDIMENTO
 
-        public void render(){
+        public void rendimento(float render){
 
-            saldo += saldo * 0.05;
-            System.out.printf("\nSaldo Final - (Saldo + Rendimento): %.2f Reais", saldo);
+            if (render > 0){
+                
+                render = render / 100;
+                saldo += saldo * render;
+
+                System.out.printf("\n-------> Saldo Final <--------\n \nSaldo Atual + Rendimento: %.2f Reais", saldo, render);
+            }
+
+            else{
+
+                System.out.printf("\nOperação não realizada!! Ajuste o valor do rendimento.");
+            }
+            
+
         }
 
     }
